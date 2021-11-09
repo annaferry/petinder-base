@@ -1,0 +1,198 @@
+  // menu
+
+  .menu {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 100%;
+	height: 100vh;
+	width: 100vw;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 128px;
+	background: $primary;
+	transition: left 0.4s, background-color 0.2s;
+  
+	&.menu-visible {
+	  left: 0;
+	}
+   
+	.menu-nav-mobile {
+		text-align: center;
+
+	  .menu-links a {
+		display: block;
+		text-align: center;
+		padding: 7px 20px;
+		text-decoration: none;
+		color: white;
+
+		&:hover{
+			background: $accent;
+			color: $primary;
+		}
+	  }
+	}
+
+	.btn-login {
+		width: 200px;
+		margin: 0 auto;
+		margin-top: 20px;
+	  }
+  }
+  
+
+
+  // menu icon
+
+  .menu-icon {
+	height: 40px;
+	width: 60px;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+
+	@media #{$min-md}{
+	  display: none;
+	}
+  }
+  
+  .menu-icon-bar {
+	position: relative;
+	height: 4px;
+	width: 24px;
+	border-radius: 2px;
+	background-color: #000;
+  
+	&:before,
+	&:after {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  height: 4px;
+	  width: 24px;
+	  border-radius: 2px;
+	  background-color: #000;
+	  transform-origin: center center;
+	}
+  
+	&:before {
+	  top: -7px;
+	}
+  
+	&:after {
+	  top: 7px;
+	}
+
+	&:hover{
+		cursor: pointer;
+	}
+  }
+  
+  .menu-icon-cross {
+	animation: originalToCross .4s forwards;
+  
+	&:before {
+	  animation: beforeToCross .4s forwards;
+	}
+  
+	&:after {
+	  animation: afterToCross .4s forwards;
+	}
+  }
+  
+  .menu-icon-hamburguer {
+	animation: originalToHamburguer .4s forwards;
+  
+	&:before {
+	  animation: beforeToHamburguer .4s forwards;
+	}
+  
+	&:after {
+	  animation: afterToHamburguer .4s forwards;
+	}
+  }
+  
+  @keyframes originalToHamburguer {
+	0% {
+	  background-color: transparent;
+	}
+  
+	40%, 100% {
+	  background-color: #000;
+	}
+  }
+  
+  @keyframes beforeToHamburguer {
+	0% {
+	  top: 0;
+	  transform: rotate(45deg);
+	}
+  
+	20%, 40% {
+	  top: 0;
+	  transform: rotate(0);
+	}
+  
+	100% {
+	  top: -6px;
+	}
+  }
+  
+  @keyframes afterToHamburguer {
+	0% {
+	  top: 0;
+	  transform: rotate(-45deg);
+	}
+  
+	20%, 40% {
+	  top: 0;
+	  transform: rotate(0);
+	}
+  
+	100% {
+	  top: 6px;
+	}
+  }
+  
+  @keyframes originalToCross {
+	0% {
+	  background-color: #000;
+	}
+  
+	40%, 100% {
+	  background-color: transparent;
+	}
+  }
+  
+  @keyframes beforeToCross {
+	0% {
+	  top: -6px;
+	}
+  
+	20%, 40% {
+	  top: 0;
+	  transform: rotate(0);
+	}
+  
+	100% {
+	  top: 0;
+	  transform: rotate(45deg);
+	}
+  }
+  
+  @keyframes afterToCross {
+	0% {
+	  top: 6px;
+	}
+  
+	20%, 40% {
+	  top: 0;
+	  transform: rotate(0);
+	}
+  
+	100% {
+	  top: 0;
+	  transform: rotate(-45deg);
+	}
+  }

@@ -1,0 +1,13 @@
+{
+  "name": "petinder-base",
+  "version": "1.0.0",
+  "description": "Petinder base project",
+  "main": "index.html",
+  "scripts": {
+    "scss": "node-sass --watch scss/styles.scss -o css"
+  },
+  "author": "Anna Ferry",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,55 @@
+// importa tipografía desde google fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+// asigna las tipografías
+$font-family-sans-serif: "Inter", sans-serif;
+$font-family-title: "Poppins", sans-serif;
+
+// colores 
+$green: #41b883;
+$red: #e02d54;
+$blue: #2482c9;
+
+$grey: #55536b;
+$grey-label: #8f8f8f;
+$grey-medium: #aaa;
+$grey-light: #f6f7fc;
+
+$primary: #5B49FE;
+$accent: #7DE88C;
+$accent-light: #CFF37D;
+
+$border-color: #ddd;
+$text-color: #222;
+$label-color: #8f8f8f;
+
+
+// colores tarjetas
+$card-colors: #f5fc99, #FFD25F, #d0f174, #9b563b, #F584FF, #66EDC4, #FEBACE, #7ee5f3, #7FF38B, #BAD9FE, #535AFF, #FF7A7A, #4AC7EE, #FEDABA, #F4E134, #9e95d5, #f5513b, #6b3caa, #9c619c, #f79b66;
+ 
+
+
+// BREAKPOINTS:
+$xxs: 320px;
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1440px;
+$xxl: 1900px;
+
+// MAX SIZE:
+$max-xxs: "(max-width: 320px)";
+$max-xs: "(max-width: 480px)";
+$max-sm: "(max-width: 768px)";
+$max-md: "(max-width: 992px)";
+$max-lg: "(max-width: 1200px)";
+
+// MIN SIZE:
+$min-xs: "(min-width: 480px)";
+$min-sm: "(min-width: 768px)";
+$min-md: "(min-width: 992px)";
+$min-lg: "(min-width: 1200px)";
+$min-xl: "(min-width: 1440px)";
+$min-xxl: "(min-width: 1900px)";

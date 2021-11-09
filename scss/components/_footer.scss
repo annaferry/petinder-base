@@ -1,0 +1,36 @@
+footer{
+    background: $primary;
+    color: white;
+    padding: 20px 0;
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: 500;
+
+    a{
+        color: white;
+
+        &:hover{
+            color: $accent;
+        }
+    }
+
+    .legal-links{
+        margin-top: 10px;
+    }
+
+    @media #{$min-sm} {
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .legal-links{
+            display: flex;
+            margin-top: 0;
+    
+            li{
+                margin-right: 10px;
+            }
+        }
+    }   
+}
